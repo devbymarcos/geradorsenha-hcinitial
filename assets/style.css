@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+:root {
+  --bg-primary: #131219;
+  --bg-secondary: #201d2f;
+  --font-color: #ebebeb;
+  --color-green: #027400;
+  --color-orange: #ff7800;
+
+  --hover-orange: #b45807;
+
+  --gradiente-liner: linear-gradient(to right, #ff610c, #ff053f);
+  --radius: 6px;
+}
+
+:root.light {
+  --bg-primary: #d8d8d8;
+  --bg-secondary: #fbfbfb;
+  --font-color: #414141;
+}
+
+body {
+  background-color: var(--bg-primary);
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  border-bottom: 1px solid var(--bg-secondary);
+}
+
+.logo {
+  display: flex;
+}
+
+.logo h1 {
+  color: var(--font-color);
+  font-size: 1.9rem;
+  font-style: italic;
+}
+.logo img {
+  width: 35px;
+  height: 35px;
+}
+
+.btn-theme-mode {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.container {
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  color: var(--font-color);
+  font-size: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.box-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+input[type="text"] {
+  width: 425px;
+  height: 84px;
+  padding: 0px 1rem;
+  border: none;
+  outline: none;
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius);
+  color: var(--font-color);
+  font-size: 2rem;
+}
+input[type="text"]:nth-child(2) {
+  width: 84px;
+  height: 84px;
+  text-align: center;
+}
+
+.btn-change button {
+  display: block;
+  background-color: var(--color-orange);
+  border: none;
+  cursor: pointer;
+  padding: 6px 10px;
+}
+
+.btn-change button:nth-child(1) {
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+.btn-change button:nth-child(2) {
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+}
+
+.btn-change button:hover {
+  background-color: var(--hover-orange);
+}
+
+.btn-change button:active {
+  transform: scale(0.9);
+}
+
+.btn-action-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn-action {
+  width: 26.56rem;
+  height: 4rem;
+  font-size: 2rem;
+  color: var(--font-color);
+  background-image: var(--gradiente-liner);
+  border: none;
+  border-radius: var(--radius);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-copy {
+  width: 9.06rem;
+  height: 4rem;
+  font-size: 1.8rem;
+  color: var(--font-color);
+  background-image: var(--gradiente-liner);
+  border: none;
+  border-radius: var(--radius);
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn-copy:active,
+.btn-action:active {
+  transform: scale(0.97);
+}

@@ -5,27 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gerador de senha</title>
+    <link rel="stylesheet" href="/assets/style.css" />
   </head>
   <body>
-    <section>
-      <h1>Gerador de senha</h1>
+    <header>
+      <div class="logo">
+        <span>
+          <img
+            src="/assets/icons/logo.svg"
+            alt="logo marca em formato de padrão de senha"
+          />
+        </span>
+        <h1>CREATE PASSWORD</h1>
+      </div>
+      <div class="btn-theme-mode">
+        <img src="/assets/icons/sun.svg" alt=" icone de sol" />
+      </div>
+    </header>
+    <section class="container">
+      <p>Gerador de senha</p>
       <div class="box-input">
         <input id="inputPassword" type="text" />
         <input id="inputNumber" type="text" />
         <div class="btn-change">
           <button id="btnUp">
-            <img src="/assets/icons/bxs_up-arrow.svg" alt="" />
+            <img
+              src="/assets/icons/bxs_up-arrow.svg"
+              alt="icone no botão para aumentar o valor do input - seta para cima"
+            />
           </button>
           <button id="btnDown">
-            <img src="/assets/icons/bxs_down -arrow.svg" alt="" />
+            <img
+              src="/assets/icons/bxs_down -arrow.svg"
+              alt="icone no botão para diminuir o valor do input - seta para baixo"
+            />
           </button>
         </div>
       </div>
-      <div>
-        <button id="gerarSenha" class="btn-action">Gerar Senha</button>
-        <button>
+      <div class="btn-action-box">
+        <button id="gerarSenha" class="btn-action">Gerar senha</button>
+        <button class="btn-copy">
           <span>
-            <img src="/assets/icons/copy.svg" alt="" />
+            <img src="/assets/icons/copy.svg" alt="icone botão de copiar" />
           </span>
           copiar
         </button>
